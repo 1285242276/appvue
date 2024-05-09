@@ -104,5 +104,6 @@ export default {
 #map {
   width: 100vw;
   height: 100vh;
+  border: solid 1px #ccc;
 }
 </style>
