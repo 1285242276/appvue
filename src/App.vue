@@ -1,5 +1,10 @@
 <template>
-  <div id="map"></div>
+  <!-- <div id="map" class="hh" style="display: flex"></div> -->
+  <div>
+    <!-- <HelloWorldVue /> -->
+    <example />
+    <!-- <word /> -->
+  </div>
 </template>
 
 <script>
@@ -15,9 +20,17 @@ import Style from 'ol/style/Style'
 import Text from 'ol/style/Text'
 import Fill from 'ol/style/Fill'
 import Stroke from 'ol/style/Stroke'
+import HelloWorldVue from './components/HelloWorld.vue'
+import example from './components/example.vue'
+// import word from './components/word.vue'
 
 export default {
   name: 'App',
+  components: {
+    HelloWorldVue,
+    example,
+    // word,
+  },
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',
